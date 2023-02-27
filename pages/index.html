@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vkontakte example</title>
+    <link href="..//css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__container-logo">
+                <img id="header__logo" src="..//images/vk-1.svg" alt="logo">
+                <p class="header__logo-text">Vkontakte</p>
+            </div>
+
+            <form class="header__form">
+                <div class="header__form-container"> 
+                    <button class="header__form-btn" type="submit"></button>
+                    <input class="header__form-input" type="search" placeholder="Найти...">
+                </div>
+            </form>
+
+            <div class="header__user">
+                <p class="header__user-name">Константин</p>
+                <img id="header__user-avatar" src="..//images/user.svg" alt="user photo">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <nav class="nav__left">
+            <div class="nav__left-container">
+                <a class="nav__left-link" href="#">Тык</a>
+                <a class="nav__left-link" href="#">Тык</a>
+                <a class="nav__left-link" href="#">Тык</a>
+                <a class="nav__left-link" href="#">Тык</a>
+                <a class="nav__left-link" href="#">Тык</a>
+                <a class="nav__left-link" href="#">Тык</a>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="content__first">
+                <div class="content__first-column1">
+                    <div class="content__first-table"><p class="content__first-table-item">Unde quaerat, porro repudiandae cum, neque blanditiis rerum labore, corrupti at aliquam fuga odio sint ipsam.</p></div>
+                    <div class="content__first-table"><p class="content__first-table-item">Culpa accusantium inventore sed corporis, neque dolorem tempore omnis praesentium quae, explicabo delectus.</p></div>
+                    <div class="content__first-table"><p class="content__first-table-item">Dolorum consectetur voluptatibus deleniti alias blanditiis in eius eveniet doloremque perspiciatis, et quia.</p></div>
+                    <div class="content__first-table"><p class="content__first-table-item">Разнообразный и богатый опыт укрепление и развитие структуры требуют определения и уточнения существенных финансовых.</p></div>
+                </div>
+                <div class="content__first-column2">
+                    <div class="content__first-table"><p class="content__first-table-item">Unde quaerat, porro repudiandae cum, neque blanditiis rerum labore, corrupti at aliquam fuga odio sint ipsam.</p></div>
+                    <div class="content__first-table"><p class="content__first-table-item">Culpa accusantium inventore sed corporis, neque dolorem tempore omnis praesentium quae, explicabo delectus.</p></div>
+                    <div class="content__first-table"><p class="content__first-table-item">Dolorum consectetur voluptatibus deleniti alias blanditiis in eius eveniet doloremque perspiciatis, et quia.</p></div>
+                    <div class="content__first-table"><p class="content__first-table-item">Разнообразный и богатый опыт укрепление и развитие структуры требуют определения и уточнения существенных финансовых.</p></div>
+                </div>
+            </div>
+
+            <div class="content__last">
+                <div class="content__last-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti alias eius, laboriosam exercitationem fuga totam quaerat ipsum quos molestias tempore consequatur provident, atque, blanditiis nisi. Quis nihil iusto asperiores ad.</div>
+            </div>
+        </div>
+        <hr class="comments__line">
+
+        <div class="comments__container">
+            <div class="comments__container-comments">
+                <button class="btn__style-first comments__container-comments-btn">Комментарии</button>
+                <span class="comments__container-comments-text">(80)</span>
+            </div>
+            <button class="btn__style-first comments__container-sorting">По количеству оценок &#9660;</button>
+            <button class="btn__style-first comments__container-favorites">Избранное 
+                <img id="like" src="..//images/heart.svg" alt="like">
+            </button>
+        </div>
+
+        <section class="section1">
+            <div class="section1__row1">
+                <img class="user__images section1__image" src="..//images/Maks user.png" alt="user">
+                <span class="style__name section1__name">Максим Авдеенко</span>
+            </div>
+            <div class="section1__row2">
+                <div class="container">
+                    <textarea id="text__style" class="section1__input" placeholder="Введите текст сообщения..."  cols="30" rows="10"></textarea>
+                    <div class="counter">
+                      <span class="current">0</span>
+                      <span class="total section1__maxwords">&nbsp;/ Макс. 1000 символов</span>
+                    </div>
+                  </div>
+                <button id="btn__send" class="btn__send btn__style-first section1__btn">Отправить</button>
+            </div>
+        </section>
+
+        <section class="section4__contents">
+        <!-- <section class="section2">
+            <div class="section2__comments">
+                <img class="user__images section2__comments-image" src="..//images/Alex user.png">
+                <span class="style__name section2__comments-name">Алексей_1994b</span>
+                <span class="comments__date section2__comments-date">15.01 13:55</span>
+            </div>
+            <p class="section__content section2__content">Самое обидное когда сценарий по сути есть - в виде книг, 
+                где нет сюжетных дыр, всё логично, стройное повествование и достаточно взять и экранизировать оригинал как это было в первых фильмах с 
+                минимальным количеством отсебятины и зритель с восторгом примет любой такой фильм и сериал, однако вместо этого 
+                'Кольца власти' просто позаимствовали имена из оригинала, 
+                куски истории, мало связанные между собой и выдали очередной среднячковый сериал на один раз в лучшем случае.</p>
+            <div class="section__btn-comments section2__btn">
+                <button id="section2__btn-answer" class="btn__style-first section2__btn-answer">Ответить
+                    <img src="..//images/arrow.svg" alt="arrow">
+                </button>
+                <button class="btn__style-first section2__btn-favorites">В избранном
+                    <img src="..//images/heart big.svg" alt="heart">
+                </button>
+                <div class="section__btn-raiting section2__btn-container">
+                    <button class="btn__style-first btn__raiting section2__btn-down">
+                        <img src="..//images/btn -.svg">
+                    </button>
+                    <span class="raiting__show">6</span>
+                    <button class="btn__style-first btn__raiting section2__btn-up">
+                        <img src="..//images/btn +.svg">
+                    </button>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- <section class="section3">
+            <div class="section3__comments">
+                <img class="user__images section3__comments-image" src="..//images/Junior user.png"  alt="user">
+                <span class="style__name section3__comments-name">Джунбокс3000</span>
+                <span class="section3__comments-answer">Алексей_1994b
+                    <img src="..//images/arrow.svg" alt="arrow">
+                </span>
+                <span class="comments__date section3__comments-date">15.01 15:18</span>
+            </div>
+            <p class="section__content section3__content">Наверное, самая большая ошибка создателей сериала была в том, что они поставили 
+                уж слишком много надежд на поддержку фанатов вселенной. Как оказалось на деле, большинство 'фанатов' 
+                с самой настоящей яростью и желчью стали уничтожать сериал, при этом объективности в отзывах самый минимум.</p>
+            <div class="section__btn-answer section3__btn">
+                <button class="btn__style-first section3__btn-favorites">В избранное
+                    <img src="..//images/heart transparent.svg" alt="heart">
+                </button>
+                <div class="section__btn-raiting section3__btn-container">
+                    <button class="btn__style-first btn__raiting section3__btn-down">
+                        <img src="..//images/btn -.svg">
+                    </button>
+                    <span class="raiting__show">3</span>
+                    <button class="btn__style-first btn__raiting section3__btn-up">
+                        <img src="..//images/btn +.svg">
+                    </button>
+                </div>
+            </div>
+        </section> -->
+    </section>
+    <section class="section5__contents">
+
+    </section>
+    </main>
+</body>
+<script src="..//js/script.js"></script>
+</html>
